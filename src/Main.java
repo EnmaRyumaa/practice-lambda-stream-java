@@ -78,6 +78,32 @@ public class Main {
 
         System.out.println(p.Potencia(num1, num2));*/
 
+        /*### 8. Tamanho de uma String
+        Lambda que receba uma String e devolva seu comprimento.*/
+
+        /*System.out.println("Escreva uma palavra ou frase para medirmor seu tamanho, obs: Espaços contam.");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        TamanhoStringInterface t = String::length;
+        System.out.println(t.tamanho(str));*/
+
+        /*### 9. Calcular imposto
+        Lambda que receba um valor e aplique 10% de imposto.*/
+
+        /*System.out.print("Digite um valor para aplicarmos 10% de imposto: ");
+        Scanner scanner = new Scanner(System.in);
+        Double num = scanner.nextDouble();
+        ImpostoInterface imposto = (x) -> x += x*0.1;
+        System.out.println(imposto.imposto(num));*/
+
+        /*### 10. Saudação personalizada
+        Lambda que receba um nome e retorne:*/
+
+        System.out.println("Digite um nome: ");
+        Scanner sc = new Scanner(System.in);
+        String nome = sc.nextLine();
+        SaudacaoInterface saudacao = (x) -> System.out.print(x + ", Parabéns");
+        saudacao.saudacao(nome);
 
    }
 }
