@@ -51,5 +51,33 @@ public class Main {
 
         /*ImpressaoInterface s = () -> System.out.println("Olá mundo");
         s.imprimir();*/
-    }
+
+        /*### 6. Concatenar duas Strings
+        Lambda que receba duas Strings e retorne uma só, separadas por espaço.*/
+
+        /*System.out.print("Digite 2 palavras: ");
+        Scanner scanner = new Scanner(System.in);
+        String str1 = scanner.nextLine();
+        String str2 = scanner.nextLine();
+        ConcatenarInterface concat = String::concat;
+        System.out.println(concat.concatenar(str1, str2));*/
+
+        /*### 7. Calcular potência
+        Lambda que calcule `x` elevado a `y`.*/
+        /*System.out.println("Digite 2 números para elevarmos, no caso, x ^ y");
+        Scanner sc = new Scanner(System.in);
+        Integer num1 = sc.nextInt();
+        Integer num2 = sc.nextInt();
+        PotenciaInterface p = (x, y) -> {
+            int z = x;
+            for (int i = 0; i < y; i++) {
+                x = x * z;
+            }
+            return x;
+        };
+
+        System.out.println(p.Potencia(num1, num2));*/
+
+
+   }
 }
