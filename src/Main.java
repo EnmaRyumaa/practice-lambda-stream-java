@@ -164,5 +164,27 @@ public class Main {
 
         /*List<String> listaSemDuplicatas = lista.stream().distinct().collect(Collectors.toList());
         System.out.println(listaSemDuplicatas);*/
+
+        /*### 8. Limitar resultados
+        Pegue apenas os 3 primeiros nomes de uma lista.*/
+
+        /*List <String> lista = List.of("Ana", "Ana", "Bianca", "Bianca");
+        List<String> listaLimitada = lista.stream().limit(3).collect(Collectors.toList());
+        System.out.println(listaLimitada);*/
+
+        /*### 9. Pular elementos
+        Pule os 2 primeiros elementos e retorne o restante.*/
+
+        /*List <String> lista = List.of("Ana", "Ana", "Bianca", "Bianca");
+        List<String> listaPulada = lista.stream().skip(2).collect(Collectors.toList());
+        System.out.println(listaPulada);*/
+
+        /*### 10. Ordenar números
+        Ordene uma lista de inteiros em ordem decrescente.*/
+
+        /*List<Integer> lista = List.of(1,2,3,4,5,6,7,8,9,10);
+
+        List<Integer> listaOrdernada = lista.stream().sorted((a,b) -> b - a).collect(Collectors.toList());
+        System.out.println(listaOrdernada);*/
    }
 }
