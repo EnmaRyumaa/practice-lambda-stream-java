@@ -4,6 +4,7 @@ import interfaces.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -139,5 +140,29 @@ public class Main {
         /*List<Integer> lista = List.of(1,2,3,4,5,6,7,8,9,10);
         System.out.print(lista.stream()
                 .reduce(0, (a,b) -> a + b)*/
+
+        /*### 5. Buscar o menor número
+        Encontre o menor número em uma lista.*/
+
+        /*List<Integer> lista = List.of(1,2,3,4,5,6,7,8,9,10);
+        System.out.println(lista.stream()
+                .reduce((a, b) -> a < b ? a : b));*/
+
+        /*### 6. Buscar qualquer elemento
+        Use `findAny` para pegar algum nome de uma lista.*/
+
+        /*List<String> lista = List.of("a","b");
+
+        Optional<String> listaFinal = lista.stream().findAny();
+
+        System.out.println(listaFinal.get());*/
+
+        /*### 7. Remover duplicatas
+        De uma lista com nomes repetidos, retorne apenas nomes distintos.*/
+
+        //List <String> lista = List.of("Ana", "Ana", "Bianca", "Bianca");
+
+        /*List<String> listaSemDuplicatas = lista.stream().distinct().collect(Collectors.toList());
+        System.out.println(listaSemDuplicatas);*/
    }
 }
