@@ -2,7 +2,10 @@
 import com.sun.security.auth.module.UnixSystem;
 import interfaces.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -99,11 +102,43 @@ public class Main {
         /*### 10. Saudação personalizada
         Lambda que receba um nome e retorne:*/
 
-        System.out.println("Digite um nome: ");
+        /*System.out.println("Digite um nome: ");
         Scanner sc = new Scanner(System.in);
         String nome = sc.nextLine();
         SaudacaoInterface saudacao = (x) -> System.out.print(x + ", Parabéns");
-        saudacao.saudacao(nome);
+        saudacao.saudacao(nome);*/
 
+        /*# 🎯 Exercícios Streams (10)
+
+        ### 1. Filtrar nomes
+        De uma lista de nomes, filtre só os que começam com a letra A.*/
+
+        /*List<String> lista = List.of("Ana", "Lucas", "Fernando", "Bianca", "América");
+        List<String> listaFiltrada = lista.stream()
+                .filter((nome) -> nome.startsWith("A"))
+                .collect(Collectors.toList());
+        System.out.println(listaFiltrada);*/
+
+        /*### 2. Contar nomes longos
+        Conte quantos nomes possuem mais de 4 letras.*/
+
+        /*List<String> lista = List.of("Ana", "Bianca", "Fernando", "Cac");
+        Integer i = lista.stream().filter((x) -> x.length() > 4).collect(Collectors.toList()).size();
+        System.out.println(i);*/
+
+        /*### 3. Transformar lista em maiúsculas
+        De uma lista de Strings, retorne uma nova lista toda em maiúsculas.*/
+
+        /*List<String> lista = List.of("Ana", "Bianca", "Fernando", "Cac");
+        List<String> listaUpper = lista.stream().map(String::toUpperCase).collect(Collectors.toList());
+        listaUpper.forEach(System.out::println);*/
+
+        /*### 4. Somar números
+        Some todos os valores de uma lista de inteiros.*/
+
+        List<Integer> lista = List.of(1,2,3,4,5,6,7,8,9,10);
+        System.out.print(lista.stream()
+                .reduce(0, (a,b) -> a + b)
+        );
    }
 }
